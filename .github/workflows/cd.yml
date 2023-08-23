@@ -9,15 +9,7 @@ env:
   AZURE_WEBAPP_NAME: "gitappAA"
 
 jobs:
-  dummy:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        run: echo "Hello World"
-
-    
   deploy:
-    needs: build
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
